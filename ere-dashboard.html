@@ -36,10 +36,10 @@
             <img src="./images/icons/ic-menu.svg" alt="ic-menu" />
           </div>
           <div class="tab_title text_18 font_600 p_3 ml_4 h_100">
-            ER Module
+            audit portal
           </div>
           <div class="page_title text_16 font_500 p_3">
-            ERE Mapping
+            Consultant Redo Approval
           </div>
           <div class="nav-items">
             <ul>
@@ -155,119 +155,74 @@
     <!-- sidebar_left -->
 
     <!-- main wrapper -->
-    <div class="main_wrapper d-flex with_two_cols">
-      <!-- / Column 1 for Side navigation active menu options -->
-      <div class="col_20 pl_0">
-        <div class="leftSideBar_menu_option_list">
-          <div class="list_header">
-            <h4 class="text_16 font_600 mt_0 mb_0">
-              ERE Mapping
-              <span class="ic_add"
-                ><img src="./images/icons/ic-add.svg" alt="ic-add"
-              /></span>
-            </h4>
-          </div>
-          <div class="list_body pb_5">
-            <ul>
-              <li class="active">
-                <p>Vijay Parmar</p>
-                <label>
-                  <span>Default 30</span>
-                  <span>NRT 35</span>
-                </label>
-              </li>
-              <li>
-                <p>Olivia</p>
-                <label>
-                  <span>Default 30</span>
-                  <span>NRT 35</span>
-                </label>
-              </li>
-              <li>
-                <p>Lucas</p>
-                <label>
-                  <span>Default 23</span>
-                  <span>NRT 3</span>
-                </label>
-              </li>
-              <li>
-                <p>Gianna</p>
-                <label>
-                  <span>Default 32</span>
-                  <span>NRT 15</span>
-                </label>
-              </li>
-              <li>
-                <p>Benjamin</p>
-                <label>
-                  <span>Default 32</span>
-                  <span>NRT 15</span>
-                </label>
-              </li>
-              <li>
-                <p>Jackson</p>
-                <label>
-                  <span>Default 32</span>
-                  <span>NRT 15</span>
-                </label>
-              </li>
-              <li>
-                <p>Grayson</p>
-                <label>
-                  <span>Default 32</span>
-                  <span>NRT 15</span>
-                </label>
-              </li>
-              <li>
-                <p>Sebastian</p>
-                <label>
-                  <span>Default 32</span>
-                  <span>NRT 15</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-          <div class="list_footer px_2 pb_2 pt_5">
-            <div class="rcs_search w_100 mb_2 close_search">
-              <input
-                type="search"
-                placeholder="Sebastian"
-                class="text_14 font_400"
-              />
-              <span
-                ><img src="./images/icons/ic-close.svg" alt="ic-search"
-              /></span>
+    <div class="main_wrapper">
+      <div class="stat_wrapper">
+        <div class="d-flex">
+          <div class="stat_box">
+            <div class="stat_details">
+              <div class="d-flex">
+                <h5>12<span>Active ER</span></h5>
+                <h5>12<span>Mapped Clients</span></h5>
+              </div>
+              <p>ERE Mapping</p>
             </div>
-            <div class="rcs_search w_100">
-              <input
-                type="search"
-                placeholder="Search ER"
-                class="text_14 font_400"
-              />
-              <span
-                ><img src="./images/icons/ic-search.svg" alt="ic-search"
-              /></span>
+          </div>
+          <div class="stat_box">
+            <div class="stat_details">
+              <div class="d-flex">
+                <h5>12<span>Active ER</span></h5>
+                <h5>12<span>Mapped Clients</span></h5>
+              </div>
+              <p>CRE Mapping</p>
+            </div>
+          </div>
+          <div class="stat_box">
+            <div class="stat_details">
+              <div class="d-flex">
+                <h5>600<span>Active ER</span></h5>
+                <h5>15000<span>Mapped Clients</span></h5>
+              </div>
+              <p>Clientwise ERE Mapping</p>
+            </div>
+          </div>
+          <div class="stat_box">
+            <div class="stat_details">
+              <div class="d-flex">
+                <h5>
+                  <span> </span>
+                </h5>
+                <h5>
+                  <span> </span>
+                </h5>
+              </div>
+              <p>ER-Candidate Connect</p>
+            </div>
+          </div>
+          <div class="stat_box">
+            <div class="stat_details">
+              <div class="d-flex">
+                <h5>
+                  <span></span>
+                </h5>
+                <h5>
+                  <span></span>
+                </h5>
+              </div>
+              <p>ER Survey & Reports</p>
             </div>
           </div>
         </div>
       </div>
-      <!-- Column 1 for Side navigation active menu options \ -->
-      <!-- / Column 2 for Side navigation active menu options -->
-      <div class="col_80 p_0">
-        <div class="add_ere">
-          <button class="modal_open" data-modalname="add_ere_modal">
-            <img src="./images/icons/add-ere.svg" alt="" class="">
-          </button>
-        </div>
+      <div class="dashboardContent mt_3 p_3">
+        <!-- Dashboard content goes here -->
       </div>
-      <!-- Column 2 for Side navigation active menu options \ -->
     </div>
 
     <!-- modal -->
-    <div class="custom_modal notes_modal modal_65" id="add_ere_modal">
+    <div class="custom_modal notes_modal" id="reject_notes_modal">
       <div class="custom_modal_wrap">
         <div class="custom_modal_header">
-          <h5 class="modal-title">Add ERE</h5>
+          <h5 class="modal-title">Rejection Notes</h5>
           <button class="close">
             <span>
               <svg
@@ -300,54 +255,21 @@
             </span>
           </button>
         </div>
-        <div class="custom_modal_body col-lg-12 p_3">
-          <div class="col-lg-7 colOne pr_5">
-            <div class="form_control">
-              <label for="ERName" class="text_10">ER Name</label>
-              <input type="text" id="ERName" class="text_12">
-            </div>
-            <div class="form_control">
-              <label for="Designation" class="text_10">Designation</label>
-              <input type="text" id="Designation" class="text_12">
-            </div>
-            <div class="col-lg-6 pl_0">
-              <div class="form_control">
-                <label for="Status" class="text_10">Status</label>
-                <input type="text" id="Status" class="text_12">
-              </div>
-              <div class="form_control">
-                <label for="DateofJoining" class="text_10">Date of Joining</label>
-                <input type="date" id="DateofJoining" class="text_12">
-              </div>
-            </div>
-            <div class="col-lg-6 pr_0">
-              <div class="form_control">
-                <label for="TCU" class="text_10">TCU</label>
-                <input type="text" id="TCU" class="text_12">
-              </div>
-              <div class="form_control">
-                <label for="EndDate" class="text_10">End Date</label>
-                <input type="date" id="EndDate" class="text_12">
-              </div>
-            </div>
+        <div class="custom_modal_body">
+          <div class="form_control required mb-3 dropdown">
+            <label for="">Reason <span>*</span></label>
+            <select name="" id="">
+              <option value="">Reason</option>
+              <option value="">Reason 1</option>
+            </select>
           </div>
-          <div class="col-lg-5 pl_5">
-            <div class="form_control">
-              <label for="ERHead" class="text_10">ER Head</label>
-              <input type="text" id="ERHead" class="text_12">
-            </div>
-            <div class="form_control">
-              <label for="ReportingManager" class="text_10">Reporting Manager</label>
-              <input type="text" id="ReportingManager" class="text_12">
-            </div>
-            <div class="form_control">
-              <label for="ResourceManger" class="text_10">Resource Manger</label>
-              <input type="text" id="ResourceManger" class="text_12">
-            </div>
+          <div class="form_control required mb-3">
+            <label for="">Notes <span>*</span></label>
+            <textarea rows="4" placeholder="Notes"></textarea>
           </div>
-          <div class="col-lg-12 p_0 text_right mt_4">
-            <button class="secondary_btn">Reset</button>
-            <button class="primary_btn ml_2">Add ERE</button>
+          <div class="confirmation_btn">
+            <button class="close">Cancel</button>
+            <button class="confirm_btn">Save</button>
           </div>
         </div>
       </div>
