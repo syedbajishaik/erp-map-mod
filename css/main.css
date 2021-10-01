@@ -86,7 +86,7 @@ button {
   background-color: #377dcf;
   padding: 0 2rem;
   height: 50px;
-  overflow: auto;
+  /* overflow: auto; */
 }
 .nav_menu .row {
   margin: 0;
@@ -1273,10 +1273,6 @@ a.accordion-toggle .doc_arrow.color_black svg *{
 
 
 /* ERE - Mapping module styles START */
-.main_wrapper.with_two_cols {
-  margin-left: 5.5%;
-  width: calc(100% - 6.5%);
-}
 .leftSideBar{
   box-shadow: 0 0 0px 0 rgb(0 0 0 / 0%);
 }
@@ -1332,7 +1328,6 @@ a.accordion-toggle .doc_arrow.color_black svg *{
   line-height: normal;
   text-align: right;
   color: #4a4a4a;
-  opacity: 0.7;
 }
 .leftSideBar_menu_option_list .list_body ul li.active label{
   color: #f5f5f7;
@@ -1365,14 +1360,14 @@ a.accordion-toggle .doc_arrow.color_black svg *{
 .leftSideBar.active{
   z-index: 99;
 }
-.add_ere{
+.empty_ere{
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.add_ere button{
+.empty_ere button{
   border: none;
   background: none;
 }
@@ -1445,10 +1440,19 @@ a.accordion-toggle .doc_arrow.color_black svg *{
   color: #9b9b9b;
   display: block;
 }
-.dashboardContent{
+.ere_dashboard .ere_card{
   min-height: 400px;
   border: solid 1px #979797;
   background-color: #f7f7f7;
+}
+.ere_dashboard .ere_card h2 {
+  font-family: Poppins;
+  font-size: 53px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #b7b7b7;
 }
 .modal_65 .custom_modal_wrap{
  width: 65%;
@@ -1574,11 +1578,14 @@ div[data-content].active{
 .ere_card .client_list_table .rcs_body .custom_tr .custom_td:nth-child(4){
   width: 18% !important;
 }
-.client_list_table .table_wrap .custom_tr:first-child{
-  border-top: 1px solid #56a9ff;
+.client_list_table .table_wrap > .custom_tr:first-child{
+  border-top: 2px solid #56a9ff;
 }
 .client_list_table .table_wrap .custom_tr:hover{
   background: #e7f3ff !important;
+}
+.client_list_table .table_wrap .custom_tr:nth-child(even){
+  background: #f2f9ff !important;
 }
 .client_list_table .table_wrap .custom_tr img[alt="ic-edit-client"]{
   width: 15px;
@@ -1599,7 +1606,7 @@ div[data-content].active{
 }
 .client_list_table .tbody{
   width: 100%;
-  max-height: 300px;
+  height: calc(100vh - 500px);
   overflow: auto;
   overflow-x: hidden;
 }
@@ -1635,6 +1642,7 @@ div[data-content].active{
   line-height: 1.2;
   text-align: center;
   color: #56a9ff;
+  background: none;
 }
 .chip {
   margin: 0 8px 8px 0;
@@ -1731,5 +1739,71 @@ div[data-content].active{
   line-height: normal;
   letter-spacing: normal;
   color: #4a4a4a;
+}
+.main_wrapper.with_two_cols {
+  margin-top: 110px;
+}
+.main_wrapper.with_two_cols .col_80{
+  padding-top: 20px !important;
+}
+.nav_menu .side_menu+.tab_title{
+  line-height: 20px;
+}
+.ere_card {
+  height: calc(100vh - 300px);
+}
+.ere_card.without_top_cards {
+  height: calc(100vh - 150px);
+}
+.text-bold {
+    font-weight: bold;
+}
+.extra-light-200, .font-weight-200{
+    font-weight: 200;
+}
+.light-300, .font-weight-300{
+    font-weight: 300;
+}
+.regular-400, .font-weight-400{
+    font-weight: 400;
+}
+.medium-500, .font-weight-500{
+    font-weight: 500;
+}
+.semi-bold-600, .font-weight-600{
+    font-weight: 600 !important;
+}
+.bold-700, .font-weight-700{
+    font-weight: 700;
+}
+.extra-bold-800, .font-weight-800{
+    font-weight: 800;
+}
+.black-900, .font-weight-900{
+    font-weight: 900;
+}
+.client_list_table .table_wrap .tbody .custom_tr{
+  border-top: 0px solid #56a9ff;
+  border-bottom: 1px solid #e7e7e7;
+}
+.client_list_table.empty_table .custom_tr:hover{
+  background: none !important;
+}
+@media screen and (min-width: 1600px){
+  .ere_card {
+    height: calc(100vh - 300px);
+  }
+}
+@media screen and (min-width: 1601px){
+  .main_wrapper.with_two_cols, .main_wrapper.custom_container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media (max-width: 1600px){
+  .main_wrapper.with_two_cols {
+    margin-left: 5.5%;
+    width: calc(100% - 6.5%);
+  }
 }
 /* ERE - Mapping module styles END */
