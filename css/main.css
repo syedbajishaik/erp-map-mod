@@ -1293,6 +1293,7 @@ a.accordion-toggle .doc_arrow.color_black svg *{
 .leftSideBar_menu_option_list h4 .ic_add{
   float: right;
   padding-right: 15px;
+  cursor: pointer;
 }
 .leftSideBar_menu_option_list .list_body ul{
   margin: 0px;
@@ -1788,6 +1789,9 @@ div[data-content].active{
 }
 .client_list_table.empty_table .custom_tr:hover{
   background: none !important;
+}
+.client_list_table.po_candidate .custom_tr:first-child .custom_th:first-child{
+  padding-left: 8px !important;
 }
 @media screen and (min-width: 1600px){
   .ere_card {
