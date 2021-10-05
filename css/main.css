@@ -1810,4 +1810,9 @@ div[data-content].active{
     width: calc(100% - 6.5%);
   }
 } 
+@media (max-width: 1366px){
+  .modal_65 .custom_modal_wrap {
+    width: 90%;
+  }
+} 
 /* ERE - Mapping module styles END */
